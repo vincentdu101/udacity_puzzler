@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udacity_Puzzler_course4", "Assembly-CSharp-firstpass.csproj", "{164AAC02-E286-5543-A89B-E22D67D6F03E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udacity_Puzzler_course4", "Assembly-CSharp.csproj", "{191B6480-A56C-AF8E-FA7E-230B2732765F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udacity_Puzzler_course4", "Assembly-CSharp-Editor.csproj", "{43DBA882-D167-96E0-7BA3-6D247D99EDBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164AAC02-E286-5543-A89B-E22D67D6F03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164AAC02-E286-5543-A89B-E22D67D6F03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164AAC02-E286-5543-A89B-E22D67D6F03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164AAC02-E286-5543-A89B-E22D67D6F03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191B6480-A56C-AF8E-FA7E-230B2732765F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191B6480-A56C-AF8E-FA7E-230B2732765F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191B6480-A56C-AF8E-FA7E-230B2732765F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191B6480-A56C-AF8E-FA7E-230B2732765F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DBA882-D167-96E0-7BA3-6D247D99EDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DBA882-D167-96E0-7BA3-6D247D99EDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DBA882-D167-96E0-7BA3-6D247D99EDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DBA882-D167-96E0-7BA3-6D247D99EDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
