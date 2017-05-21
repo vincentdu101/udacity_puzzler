@@ -26,15 +26,17 @@ public class lightUp : MonoBehaviour
 
 
 	public void gazeLightUp() {
+		Debug.Log ("gaze light up");
 		this.GetComponent<MeshRenderer>().material = lightUpMaterial; //Assign the hover material
 		//this.GetComponentInChildren<ParticleSystem>().enableEmission = true; //Turn on particle emmission
 		this.GetComponent<GvrAudioSource>().Play();
 
-		gameLogic.GetComponent<GameLogic>().playerSelection(this.gameObject);
+//		gameLogic.GetComponent<GameLogic>().playerSelection(this.gameObject);
 
 
 	}
 	public void playerSelection() {
+		Debug.Log ("player select ");
 		gameLogic.GetComponent<GameLogic>().playerSelection(this.gameObject);
 		this.GetComponent<GvrAudioSource>().Play();
 	}
@@ -44,6 +46,7 @@ public class lightUp : MonoBehaviour
     }
 
 	public void patternLightUp() { //Lightup behavior when the pattern shows.
+		Debug.Log ("pattern light up");
 		this.GetComponent<MeshRenderer>().material = lightUpMaterial; //Assign the hover material
 		//this.GetComponentInChildren<ParticleSystem>().enableEmission = true; //Turn on particle emmission
 		this.GetComponent<GvrAudioSource> ().Play (); //Play the audio attached

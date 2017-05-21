@@ -79,14 +79,15 @@ public class GameLogic : MonoBehaviour
         startUI.SetActive(false);
         eventSystem.SetActive(false);
         iTween.MoveTo(player, playPoint.transform.position, 5f);
-        CancelInvoke("displayPattern");
-        InvokeRepeating("displayPattern", 3, puzzleSpeed); //Start running through the displaypattern function
+//        CancelInvoke("displayPattern");
+        InvokeRepeating("displayPattern", 1, puzzleSpeed); //Start running through the displaypattern function
         currentSolveIndex = 0; //Set our puzzle index at 0
 
     }
 
     void displayPattern()
     { //Invoked repeating.
+		Debug.Log("Showing pattern");
         currentlyDisplayingPattern = true; //Let us know were displaying the pattern
         eventSystem.SetActive(false); //Disable gaze input events while we are displaying the pattern.
 
@@ -103,7 +104,7 @@ public class GameLogic : MonoBehaviour
                 Debug.Log("End of puzzle display");
                 currentlyDisplayingPattern = false; //Let us know were done displaying the pattern
                 currentDisplayIndex = 0;
-                CancelInvoke(); //Stop the pattern display.  May be better to use coroutines for this but oh well
+                CancelInvoke("displayPattern"); //Stop the pattern display.  May be better to use coroutines for this but oh well
                 eventSystem.SetActive(true); //Enable gaze input when we aren't displaying the pattern.
             }
         }
@@ -169,7 +170,7 @@ public class GameLogic : MonoBehaviour
 
     public void finishingFlourish()
     { //A nice visual flourish when the player wins
-        //this.GetComponent<AudioSource>().Play(); //Play the success audio
+        this.GetComponent<AudioSource>().Play(); //Play the success audio
         restartUI.SetActive(true);
         playerWon = true;
 
