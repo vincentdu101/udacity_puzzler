@@ -5,7 +5,7 @@ start the project. replay the sequence of the orbs and finish the game.
 
 ## Used Software
 
-* Unity 5.3.f03
+* Unity 5.6.f03
 * Google SDK 1.03
 * Udacity Puzzler Starter set
 
@@ -19,15 +19,4 @@ To install this project make the following:
 
 # Licence
 
-This project ist under the MIT license
-
-# Known Bugs
-
-when the game starts and you stay in the room, the orbs will light up as expecting. But you cant finish even when you repeat the sequence.
-
-# Changelog
-
-* init commit - January 22 2017
-* add model in mainscene (add new dungeon model in mainscene; udacity: placing our game orbs) - January 22 2017
-* upgrading unity, downgrading unity, upgrading to GVR 1.10, downgrading GVR 1.03, Fixing script errors in console - January/February 2017
-* Add spheres and gamelogic - February 21 2017
+This project is under the MIT license

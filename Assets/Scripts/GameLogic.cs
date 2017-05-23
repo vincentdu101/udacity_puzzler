@@ -78,9 +78,10 @@ public class GameLogic : MonoBehaviour
         //Step through the array for displaying the puzzle, and checking puzzle failure or success.
         startUI.SetActive(false);
         eventSystem.SetActive(false);
+		generatePuzzleSequence ();
         iTween.MoveTo(player, playPoint.transform.position, 5f);
-//        CancelInvoke("displayPattern");
-        InvokeRepeating("displayPattern", 1, puzzleSpeed); //Start running through the displaypattern function
+        CancelInvoke("displayPattern");
+        InvokeRepeating("displayPattern", 3, puzzleSpeed); //Start running through the displaypattern function
         currentSolveIndex = 0; //Set our puzzle index at 0
 
     }
